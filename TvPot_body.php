@@ -23,6 +23,6 @@ class TvPot {
         if(empty($args['height'])) $args['height']='360px';
         $args['width'] = htmlspecialchars($args['width']);
         $args['height'] = htmlspecialchars($args['height']);
-        return Html::rawElement('iframe', array('src'=>"http://videofarm.daum.net/controller/video/viewer/Video.html?vid=$input&play_loc=undefined&alert=true",'width'=>$args['width'],'height'=>$args['height'],'frameborder'=>'0','scrolling'=>'no') , '');
+        return Html::rawElement('iframe', array('src'=>"//videofarm.daum.net/controller/video/viewer/Video.html?vid=$input&play_loc=undefined&alert=true",'width'=>$args['width'],'height'=>$args['height'],'frameborder'=>'0','scrolling'=>'no') , '');
     }
 }
