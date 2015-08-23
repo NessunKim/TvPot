@@ -1,0 +1,23 @@
+{
+	"name": "TvPot",
+	"version": "1.0",
+	"author": ["Nessun"],
+	"url": "https://librewiki.net/wiki/%EC%82%AC%EC%9A%A9%EC%9E%90:Nessun",
+	"descriptionmsg": "tvpot-desc",
+	"license-name": "GPL-3.0+",
+	"type": "parserhook",
+	"MessagesDirs": {
+		"TvPot": [
+			"i18n"
+		]
+	},
+	"Hooks": {
+		"ParserFirstCallInit": [
+			"TvPot::wfTvPotParserInit"
+		]
+	},
+	"AutoloadClasses": {
+		"TvPot": "TvPot_body.php"
+	},
+	"manifest_version": 1
+}
