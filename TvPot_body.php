@@ -18,7 +18,6 @@ class TvPot {
      * @return string
      */
     function wfTvPotRender( $input, array $args, Parser $parser, PPFrame $frame ) {
-        $parser->disableCache();
         $input = htmlspecialchars($input);
         if(empty($args['width'])) $args['width']='640px';
         if(empty($args['height'])) $args['height']='360px';
